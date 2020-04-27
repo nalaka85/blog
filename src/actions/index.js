@@ -8,7 +8,7 @@ export const fetchPosts =  () =>  async dispatch => {
  //     payload: response
 };
 
-export const fetchUser = (id) =>  async dispatch => {
+export const fetchUser = id =>  async dispatch => {
    //const response  =await jsonPlaceholder.get('./users/' +id) 
    //ES2015
   const response  = await jsonPlaceholder.get(`/users/${id}`) ;
